@@ -6,5 +6,7 @@ target 'FirebaseStorageExample' do
   use_frameworks!
 
   # Pods for FirebaseStorageExample
+  pod 'Firebase/Core'
+  pod 'Firebase/Storage'
 
 end
