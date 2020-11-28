@@ -4,7 +4,7 @@
 target 'FirebaseStorageExample' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  pod 'XCGLogger'
   # Pods for FirebaseStorageExample
   pod 'Firebase/Core'
   pod 'Firebase/Storage'

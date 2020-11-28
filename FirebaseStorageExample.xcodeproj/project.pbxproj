@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		A64027EF2572007A00C769EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A64027EE2572007A00C769EF /* Assets.xcassets */; };
 		A64027F22572007A00C769EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64027F02572007A00C769EF /* LaunchScreen.storyboard */; };
 		A6914DA1257202B0008B783E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6914DA0257202B0008B783E /* GoogleService-Info.plist */; };
+		A6914DBE25720DC1008B783E /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6914DBD25720DC1008B783E /* Photos.framework */; };
+		A6914DC525721423008B783E /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6914DC425721423008B783E /* PhotosUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		A64027F12572007A00C769EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A64027F32572007A00C769EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6914DA0257202B0008B783E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A6914DBD25720DC1008B783E /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		A6914DC425721423008B783E /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6914DC525721423008B783E /* PhotosUI.framework in Frameworks */,
+				A6914DBE25720DC1008B783E /* Photos.framework in Frameworks */,
 				3833CADBEDBAECE235D213DF /* Pods_FirebaseStorageExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +95,8 @@
 		C2731753F66597FB39DD8D85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A6914DC425721423008B783E /* PhotosUI.framework */,
+				A6914DBD25720DC1008B783E /* Photos.framework */,
 				59963606B58A11CFC750944B /* Pods_FirebaseStorageExample.framework */,
 			);
 			name = Frameworks;
@@ -360,6 +368,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S62K272W76;
 				INFOPLIST_FILE = FirebaseStorageExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -367,7 +376,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tv.ponpoko.FirebaseStorageExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -379,6 +388,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S62K272W76;
 				INFOPLIST_FILE = FirebaseStorageExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -386,7 +396,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tv.ponpoko.FirebaseStorageExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
